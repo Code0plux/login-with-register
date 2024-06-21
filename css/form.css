@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('../images/3353129.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+}
+.form{
+    /* opacity: 0; */
+
+    width:400px;
+    height:auto;
+    color:#fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: sans-serif; */
+}
+.heading{
+    opacity: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+input,.submit{
+    opacity: 0;
+    width:80%;
+    height:35px;
+    display:block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background:rgba(80, 72, 188, 0.591);
+    border: none;
+    color:white;
+    padding:15px;
+    transition: .5s;
+    text-transform: capitalize;
+      
+}
+input::placeholder{
+color: rgba(255, 255, 255, 0.806);
+}
+input:hover{
+    background-color:  rgba(145, 142, 227, 0.788);
+}
+input:focus::placeholder{
+    color: rgb(255, 255, 255);
+}
+.submit{
+    opacity: 0;
+
+    width: auto;
+    padding:0 20px;
+    cursor: pointer; 
+}
+.submit:hover{
+    background-color:  rgba(145, 142, 227, 0.788);
+     transform:scale(1.050);
+}
+.link{
+    opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.806);
+    display: block;
+    margin: 30px auto;
+}
+.link:hover{
+    color: white;
+}
+.alert{
+    position:absolute;
+    top:10px;
+    display:none;
+    left: 40%;
+    /* transform: translatex(20px); */
+    text-align: center;
+    transition: 1s;
+    min-width: 150px;
+    max-width: 90%;
+    width:auto;
+    height: auto;
+    padding:10px;
+    text-transform: capitalize;
+    background: white;
+    border: 6px solid rgb(205, 119, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgb(8, 6, 6);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
